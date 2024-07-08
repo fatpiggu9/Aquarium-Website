@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Book A Ticket</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type='text/css' media='screen' href='../css/book.css'>
+	</head>
+
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="main.html"
+            ><img src="../assets/logo.png"/>
+          </a>
+        </div>
+        <div class="navbar">
+          <a href="main.html" class="navbar-item">Home</a>
+          <a href="explore.html" class="navbar-item">Explore</a>
+          <a href="book.html" class="navbar-item-active">Book Ticket</a>
+        </div>
+      </nav>
+      <div class="main">
+        <div class='bg'></div>
+        <div class="form">
+          <form action="">
+          <h1>Book A Ticket</h1>
+          <p>Please fill in the form below to proceed</p><br>
+          <label for="name">Full Name:</label>
+          <input type="text" /><br><br>
+          <label for="num">Phone Number:</label>
+          <input type="text" /><br><br>
+
+        <label for="name">Select Visitor:</label><br>
+          <label for="adults-only" class="radiobutton">
+            <input type="radio" id="adults-only" name="visitor" value="Adults(s) Only">
+            Adult(s) Only
+          </label>
+          <label for="child-only" class="radiobutton">
+            <input type="radio" id="child-only" name="visitor" value="Child/Children Only">
+            Child/Children Only
+          </label>
+          <label for="both" class="radiobutton">
+            <input type="radio" id="both" name="visitor" value="Adult(s) + Child/Children">
+            Adult(s) + Child/Children<br>
+          </label><br><br>
+
+          <label for="name">Select Category: </label><br>
+          <select id="category" name="category">
+            <option value="Ocean Fishes">Ocean Fishes</option>
+            <option value="Sharks">Sharks</option>
+            <option value="Crustaceans and Shellfish">Crustaceans and Shellfish</option>
+            <option value="Sea Turtle">Sea Turtle</option>
+            <option value="Marine Mammals">Marine Mammals</option>
+          </select>
+          <br><br>
+
+          <label for="date">Date of Visit: </label>
+          <input type="date" name="depart"><br><br>
+
+          <label for="name">Time of Visit:</label><br>
+          <input type="checkbox" id="time" name="time-of-visit" value="morning">
+          <label for="morning">Morning Trips (9am - 12pm)</label><br>
+          <input type="checkbox" id="time" name="time-of-visit" value="afternoon">
+          <label for="afternoon">Afternoon Trips (1pm - 4pm)</label><br>
+          <input type="checkbox" id="time" name="time-of-visit" value="night">
+          <label for="night">Evening Trips (7pm - finish)</label><br><br>
+
+          <input type="checkbox" id="agree" name="box" value="agree">
+          <label for="terms">I have accurately filled in the form</label><br><br><br>
+          <a href="book.html"><button class="button">Book Now</button></a>
+        </form>
+      </div>
+
+      <footer>
+      <p>Copyright &copy; 2022 Piscis Aquarium. All Rights Reserved.</p>
+      <div class="promo"><p>Follow our socials :</p></div>
+      <div class="social">
+          <a href="https://www.facebook.com/Criador.de.peces.y.otras.mascotas/" target="_blank">
+            <div class="social-logo">
+              <img src="../assets/facebook.png"/>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/aquariumpiscis/" target="_blank">
+            <div class="social-logo">
+              <img src="../assets/ig.jpg"/>
+            </div>
+          </a>
+        </div>
+  </footer>
+</body>
+</html>
